@@ -3,8 +3,7 @@ int main() {
     int x,y;
     printf("Enter a number: ");
     scanf("%d",&x);
-    x=x/10;
-    y=x/10;
+    x=x/100;
     printf("Result = %d",y);
 }
 
