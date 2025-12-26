@@ -1,18 +1,12 @@
 #include <stdio.h>
 int main() {
-    int n = 0, temp, d, sum, count = 0;
-    while (n < 100000) {
-        temp = n;
-        sum = 0;
-        while (temp > 0) {
-            d = temp % 10;
-            sum = sum + d;
-            temp = temp / 10;
-        }
-        if (sum == 14)
-            count++;
-
-        n++;
+    int a, b, lcm;
+    scanf("%d%d", &a, &b);
+    lcm = (a > b) ? a : b;
+    while (1) {
+        if (lcm % a == 0 && lcm % b == 0)
+            break;
+        lcm++;
     }
-    printf("%d", count);
+    printf("%d", lcm);
 }
