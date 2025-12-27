@@ -19,7 +19,6 @@ void add_big_arrays()
     for(i = 0; i < 51; i++)
         printf("%d", c[i]);
 }
-
 int main()
 {
     add_big_arrays();
