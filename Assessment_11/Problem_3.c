@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 void arrange_ascend() {
-    for (int i = 1; i <= 5; i++) {
-        printf("%d\n", i);
+    int i;
+    int *p = &i;
+
+    for (*p = 1; *p <= 5; (*p)++) {
+        printf("%d\n", *p);
     }
 }
+
 int main() {
     arrange_ascend();
     return 0;
