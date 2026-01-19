@@ -15,7 +15,6 @@ int main() {
             count++;
         p++;
     }
-
     printf("%d", count);
     return 0;
 }
